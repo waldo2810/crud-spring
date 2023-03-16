@@ -1,17 +1,17 @@
 package com.example.springfrancisco.application.car;
 
 import com.example.springfrancisco.domain.entities.Carro;
-import com.example.springfrancisco.domain.service.car.CarUpdateService;
+import com.example.springfrancisco.domain.service.PutService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
 @Service
-public class CarUpdate {
+public class CarPut {
 
-  private final CarUpdateService updateService;
+  private final PutService<Carro> putService;
 
   public void updateCar(Carro carro) {
-    updateService.updateCar(carro);
+    putService.updateVehicle(carro);
   }
 }

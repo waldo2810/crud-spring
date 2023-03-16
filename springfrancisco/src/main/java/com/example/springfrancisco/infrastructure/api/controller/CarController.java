@@ -3,7 +3,7 @@ package com.example.springfrancisco.infrastructure.api.controller;
 import com.example.springfrancisco.application.car.CarDelete;
 import com.example.springfrancisco.application.car.CarGet;
 import com.example.springfrancisco.application.car.CarPost;
-import com.example.springfrancisco.application.car.CarUpdate;
+import com.example.springfrancisco.application.car.CarPut;
 import com.example.springfrancisco.domain.entities.Carro;
 import jakarta.transaction.Transactional;
 import java.util.List;
@@ -27,7 +27,7 @@ public class CarController {
   private final CarPost carPost;
   private final CarGet carGet;
   private final CarDelete carDelete;
-  private final CarUpdate carUpdate;
+  private final CarPut carPut;
 
   @GetMapping
   public ResponseEntity<List<Carro>> getAllCars() {
@@ -46,7 +46,7 @@ public class CarController {
 
   @PutMapping(value = "/update")
   public void editCar(@RequestBody Carro car) {
-    carUpdate.updateCar(car);
+    carPut.updateCar(car);
   }
   //	PATCH | Update a product partially | /update/id
 
