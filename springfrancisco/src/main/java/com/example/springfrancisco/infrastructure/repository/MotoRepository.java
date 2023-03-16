@@ -11,8 +11,8 @@ public interface MotoRepository extends JpaRepository<MotoDto, String> {
   @Query(
       nativeQuery = true,
       value = "update moto_dto set marca = :marca, modelo = :modelo, " +
-              "precio = :precio, color = :color, cilindraje = :cilindraje, " +
-              "es_electrica = :es_electrica where placa = :placa"
+          "precio = :precio, color = :color, cilindraje = :cilindraje, " +
+          "es_electrica = :es_electrica where placa = :placa"
   )
   @Modifying
   void updateMoto(
