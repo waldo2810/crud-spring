@@ -2,6 +2,7 @@ package com.example.springfrancisco.infrastructure.dto;
 
 import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,6 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Setter
 @Getter
+@EqualsAndHashCode(callSuper = false)
 @Entity
 public class CarroDto extends VehiculoDto {
 
