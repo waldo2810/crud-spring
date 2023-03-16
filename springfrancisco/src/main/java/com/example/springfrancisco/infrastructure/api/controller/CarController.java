@@ -2,7 +2,7 @@ package com.example.springfrancisco.infrastructure.api.controller;
 
 import com.example.springfrancisco.application.car.CarDelete;
 import com.example.springfrancisco.application.car.CarGet;
-import com.example.springfrancisco.application.car.CarSave;
+import com.example.springfrancisco.application.car.CarPost;
 import com.example.springfrancisco.application.car.CarUpdate;
 import com.example.springfrancisco.domain.entities.Carro;
 import jakarta.transaction.Transactional;
@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(path = "/cars")
 public class CarController {
 
-  private final CarSave carSave;
+  private final CarPost carPost;
   private final CarGet carGet;
   private final CarDelete carDelete;
   private final CarUpdate carUpdate;
@@ -41,7 +41,7 @@ public class CarController {
 
   @PostMapping
   public ResponseEntity<Carro> addCar(@RequestBody Carro car) {
-    return new ResponseEntity<>(carSave.saveCar(car), HttpStatus.CREATED);
+    return new ResponseEntity<>(carPost.saveCar(car), HttpStatus.CREATED);
   }
 
   @PutMapping(value = "/update")

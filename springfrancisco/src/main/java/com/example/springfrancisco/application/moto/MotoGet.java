@@ -1,7 +1,7 @@
 package com.example.springfrancisco.application.moto;
 
 import com.example.springfrancisco.domain.entities.Moto;
-import com.example.springfrancisco.domain.service.moto.MotoGetService;
+import com.example.springfrancisco.domain.service.GetService;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -10,14 +10,14 @@ import org.springframework.stereotype.Service;
 @Service
 public class MotoGet {
 
-  private final MotoGetService motoGetService;
+  private final GetService<Moto> getService;
 
   public List<Moto> getAllMotos() {
-    return motoGetService.getAllMotos();
+    return getService.getAllItems();
   }
 
   public Moto getMoto(String placa) {
-    return motoGetService.getMoto(placa);
+    return getService.getItem(placa);
   }
 
 }
