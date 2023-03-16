@@ -1,6 +1,6 @@
-package com.example.springfrancisco.infrastructure.adapter;
+package com.example.springfrancisco.infrastructure.adapter.car;
 
-import com.example.springfrancisco.domain.service.CarDeleteService;
+import com.example.springfrancisco.domain.service.car.CarDeleteService;
 import com.example.springfrancisco.infrastructure.repository.CarRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

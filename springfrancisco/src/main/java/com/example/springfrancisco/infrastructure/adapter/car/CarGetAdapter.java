@@ -1,7 +1,7 @@
-package com.example.springfrancisco.infrastructure.adapter;
+package com.example.springfrancisco.infrastructure.adapter.car;
 
 import com.example.springfrancisco.domain.entities.Carro;
-import com.example.springfrancisco.domain.service.CarGetService;
+import com.example.springfrancisco.domain.service.car.CarGetService;
 import com.example.springfrancisco.infrastructure.dto.CarroDto;
 import com.example.springfrancisco.infrastructure.mapper.CarMapper;
 import com.example.springfrancisco.infrastructure.repository.CarRepository;

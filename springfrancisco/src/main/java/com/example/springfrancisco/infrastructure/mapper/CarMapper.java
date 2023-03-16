@@ -6,13 +6,14 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
-public interface CarMapper{
+public interface CarMapper {
 
-  @Mapping(target="marca", source="marca")
-  @Mapping(target="placa", source="placa")
-  @Mapping(target="modelo", source="modelo")
-  @Mapping(target="precio", source="precio")
-  @Mapping(target="color", source="color")
+  @Mapping(target = "marca", source = "marca")
+  @Mapping(target = "placa", source = "placa")
+  @Mapping(target = "modelo", source = "modelo")
+  @Mapping(target = "precio", source = "precio")
+  @Mapping(target = "color", source = "color")
   CarroDto toDto(Carro carro);
+
   Carro toEntity(CarroDto carroDto);
 }

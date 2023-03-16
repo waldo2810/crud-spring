@@ -1,4 +1,4 @@
-package com.example.springfrancisco.domain.service;
+package com.example.springfrancisco.domain.service.car;
 
 public interface CarDeleteService {
 

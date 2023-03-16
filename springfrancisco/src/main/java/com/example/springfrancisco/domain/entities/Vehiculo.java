@@ -1,5 +1,8 @@
 package com.example.springfrancisco.domain.entities;
 
+import com.example.springfrancisco.domain.entities.interfaces.Acelerar;
+import com.example.springfrancisco.domain.entities.interfaces.Frenar;
+import com.example.springfrancisco.domain.entities.interfaces.IniciarMarcha;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
